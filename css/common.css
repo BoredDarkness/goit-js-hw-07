@@ -165,13 +165,15 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 #controls {
-  margin: auto;
   display: flex;
-  gap: 16px;
-  padding: 32px;
-  width: 486px;
-  height: 134px;
   justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin: auto;
+  background: #f6f6fe;
+  width: 486px;
+  height: 104px;
+  border-radius: 8px;
 }
 
 #controls input {
@@ -213,16 +215,13 @@ body {
 }
 
 #boxes {
-  margin: auto;
+  margin: 16px auto;
   display: flex;
-  width: 496px;
+  width: 486px;
   height: 134px;
-  padding: 32px;
+  padding: 24px;
   gap: 44px;
+  background: #f6f6fe;
+  border-radius: 8px;
   flex-wrap: wrap;
-}
-
-#boxes div {
-  border-radius: 4px;
-  transition: background-color 0.3s;
 }
