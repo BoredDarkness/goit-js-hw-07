@@ -25,11 +25,10 @@ const images = [
   },
 ];
 const gallery = document.querySelector(".gallery");
+let html = "";
 
 images.forEach((image) => {
-  const img = document.createElement("img");
-  img.src = image.url;
-  img.alt = image.alt;
-  img.width = 200;
-  gallery.appendChild(img);
+  html += `<img src="${image.url}" alt="${image.alt}" width="200">`;
 });
+
+gallery.insertAdjacentHTML("beforeend", html);
